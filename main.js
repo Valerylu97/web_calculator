@@ -133,6 +133,44 @@ document.addEventListener("DOMContentLoaded", () => {
         // 2. Borrar del localStorage
         localStorage.removeItem("calc_history");
     });
+
+    // --- BOTÓN CAMBIAR TEMA OSCURO/CLARO ---
+    const themeId = document.getElementById("themeToggle");
+
+    // --- Cargar tema guardado ---
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+        themeId.textContent = "☀️"; // icono modo oscuro activo
+    } else if (savedTheme === "light") {
+        document.body.classList.remove("dark");
+        themeId.textContent = "🌙"; // icono modo claro activo
+    } else {
+        // si no hay nada, detecta según el sistema:
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.body.classList.add("dark");
+            themeId.textContent = "☀️";
+        } else {
+            document.body.classList.remove("dark");
+            themeId.textContent = "🌙";
+        }
+    }
+
+    // --- Evento al presionar el botón ---
+    themeToggle.addEventListener("click", () => {
+
+        const isDark = document.body.classList.toggle("dark");
+
+        if (isDark) {
+            themeId.textContent = "☀️";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeId.textContent = "🌙";
+            localStorage.setItem("theme", "light");
+        }
+    });
+
 });
 
 function addToHistory(expression, result) {

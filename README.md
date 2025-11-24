@@ -31,11 +31,11 @@ Una calculadora interactiva hecha con **HTML, CSS y JavaScript**, con diseño mo
 
 ✅ Copiar resultado al portapapeles
 
-✅ Botón “Volver arriba” flotante
-
 ✅ Evaluación segura de expresiones
 
 ✅ Diseño responsive
+
+✅ Modo Dark/Light automático + interruptor manual
 
 ---
 
@@ -81,6 +81,7 @@ No requiere instalación adicional.
 2. Presiona `=` o Enter para calcular.
 3. Usa el botón **Copiar** para copiar el resultado.
 4. Usa el botón **Limpiar historial** para vaciar el historial
+5. Cambia el tema Dark/Light cuando quieras.
 
 ---
 
@@ -107,6 +108,8 @@ La calculadora implementa un estilo tipo **Glassmorphism**:
 * Sombras suaves
 * Colores neon en elementos clave
 * Botón flotante y animaciones internas
+
+Además, incluye un **toggle manual**.
 
 ---
 
@@ -151,7 +154,6 @@ El modo se adapta automáticamente al sistema operativo:
 * Historial exportable
 * Animaciones avanzadas
 * Sonido opcional
-* Interruptor manual Dark/Light mode
 
 ---
 
@@ -176,5 +178,3 @@ Puedes abrir un **Issue** o un **Pull Request**.
 ## ⭐ **Apoya este proyecto**
 
 Si te gustó este proyecto, dale una **estrella ⭐** en GitHub.
-
----

@@ -27,6 +27,30 @@
   }
 }
 
+/* 🌙 MODO OSCURO MANUAL (BOTÓN) */
+body.dark {
+  --bg: #0b1220;
+  --card: rgba(255,255,255,0.06);
+  --card-border: rgba(255,255,255,0.08);
+  --text: #eaf0ff;
+  --muted: rgba(234,240,255,0.6);
+  --shadow: 0 8px 30px rgba(2,8,20,0.6);
+}
+
+/* APLICAR VARIABLES */
+body{
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.calculator, .screen, .btn, .history-list{
+  background: var(--card);
+  border-color: var(--card-border);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
