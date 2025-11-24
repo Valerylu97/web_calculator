@@ -1,15 +1,17 @@
-# 🚀 Calculadora Web Moderna
+# 🧮 Calculadora Web Moderna
 
 Una calculadora interactiva hecha con **HTML, CSS y JavaScript**, con diseño moderno, historial persistente, soporte para teclado, modo oscuro/claro y más.
 
 ---
 
-## 📸 **Vista previa**
+## 📷 **Vista previa**
 
 <p align="center">
+    <h3>Light mode</h3>
     <img src="/assests/claro.png" 
        alt="vista previa" 
-       style="width:100%; border-radius:12px;">
+       style="width:100%; border-radius:8px;" >
+    <h3>Dark mode</h3>
     <img src="/assests/oscuro.png" 
        alt="vista previa" 
        style="width:100%; border-radius:12px;">
@@ -17,16 +19,23 @@ Una calculadora interactiva hecha con **HTML, CSS y JavaScript**, con diseño mo
 
 ---
 
-## ✨ **Características**
+## 🌟 **Características**
 
-✔ Interfaz moderna con estilo Glass UI
-✔ Modo **Dark/Light** automático
-✔ Soporte completo para teclado
-✔ Historial con persistencia en **localStorage**
-✔ Copiar resultado al portapapeles
-✔ Botón “Volver arriba” flotante
-✔ Evaluación segura de expresiones
-✔ Diseño responsive
+✅ Interfaz moderna con estilo Glass UI
+
+✅ Modo **Dark/Light** automático
+
+✅ Soporte completo para teclado
+
+✅ Historial con persistencia en **localStorage**
+
+✅ Copiar resultado al portapapeles
+
+✅ Botón “Volver arriba” flotante
+
+✅ Evaluación segura de expresiones
+
+✅ Diseño responsive
 
 ---
 
@@ -142,21 +151,24 @@ El modo se adapta automáticamente al sistema operativo:
 * Historial exportable
 * Animaciones avanzadas
 * Sonido opcional
-* interruptor manual Dark/Light mode
+* Interruptor manual Dark/Light mode
 
 ---
 
 ## 🤝 **Contribuciones**
 
-Si deseas sugerir mejoras, ¡bienvenidas!
+Si deseas sugerir mejoras, ¡bienvenidas!.
+
 Puedes abrir un **Issue** o un **Pull Request**.
 
 ---
 
 ## 📧 **Contacto**
 
-**Valery Lucero**
+**Valeria Lucero**
+
 💼 GitHub: [@Valerylu97](https://github.com/Valerylu97)
+
 🌐 Portafolio: [https://valerylu97.github.io/Portfolio_Valeria/](https://valerylu97.github.io/Portfolio_Valeria/)
 
 ---
@@ -164,6 +176,5 @@ Puedes abrir un **Issue** o un **Pull Request**.
 ## ⭐ **Apoya este proyecto**
 
 Si te gustó este proyecto, dale una **estrella ⭐** en GitHub.
-¡Ayuda muchísimo a crecer tu perfil profesional!
 
 ---
