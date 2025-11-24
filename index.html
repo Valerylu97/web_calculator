@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora • Valeria Lucero</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+  <meta name="description" content="Calculadora web moderna - Glassmorphism, dark/light, historial y copia de resultado" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div>
+        <div class="name">Valeria Lucero</div>
+        <div class="subtitle">Calculadora Web</div>
+      </div>
+    </div>
+    <div class="theme-info">
+      <button id="themeToggle" title="Cambiar tema (automático detectado)">🌓</button>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="calculator-card">
+      <div class="display">
+        <div id="expression" class="expression" aria-live="polite"></div>
+        <div id="result" class="result" aria-live="polite">0</div>
+      </div>
+
+      <div class="keyboard">
+        <button class="btn op" data-val="(">(</button>
+        <button class="btn op" data-val=")">)</button>
+        <button class="btn op" data-val="C">C</button>
+        <button class="btn op" data-val="DEL">DEL</button>
+
+        <button class="btn num" data-val="7">7</button>
+        <button class="btn num" data-val="8">8</button>
+        <button class="btn num" data-val="9">9</button>
+        <button class="btn op" data-val=" / ">÷</button>
+
+        <button class="btn num" data-val="4">4</button>
+        <button class="btn num" data-val="5">5</button>
+        <button class="btn num" data-val="6">6</button>
+        <button class="btn op" data-val=" * ">×</button>
+
+        <button class="btn num" data-val="1">1</button>
+        <button class="btn num" data-val="2">2</button>
+        <button class="btn num" data-val="3">3</button>
+        <button class="btn op" data-val=" - ">−</button>
+
+        <button class="btn num" data-val="0">0</button>
+        <button class="btn num" data-val=".">.</button>
+        <button class="btn action" id="equals" data-val="=">=</button>
+        <button class="btn op" data-val=" + ">+</button>
+      </div>
+
+      <div class="utilities">
+        <button id="copyBtn" class="utility"><i class="fas fa-copy"></i> Copiar resultado </button>
+        <button id="clearHistory" class="utility danger"><i class="fa-solid fa-trash"></i> Limpiar historial</button>
+      </div>
+    </section>
+
+    <aside class="history-panel" aria-label="Historial de operaciones">
+      <h3>Historial</h3>
+      <ul id="historyList" class="history-list"></ul>
+    </aside>
+  </main>
+</body>
+</html>
